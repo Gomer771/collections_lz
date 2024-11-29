@@ -1,10 +1,12 @@
-#импорт библиотеки
-import matplotlib.pyplot as plt
-import math
-import numpy as np
-t = np.arange(0,3.4,0.1)
-#уравнение функции
-y1 = np.sin(math.pi*t)
-plt.plot(t,y1,'b-',)
-plt.plot(t,y1,'b*',)
-plt.show  ()
+#импорт библиотек
+import matplotlib.pyplot as plt #библиотека для построения графиков
+import math #библиотека для вывода значения pi
+import numpy as np #библиотека для математических функций
+
+t = np.arange(0,4,0.2) #Создаем массив t с элементами от 0 до 3.4 с шагом 0.2
+
+y1 = np.sin(math.pi*t)#задаём уравнение функции
+
+plt.plot(t,y1) #создаём график 
+plt.plot(t,y1,'r*',) #отмечаем * на графике
+plt.show  () #отображаем график
