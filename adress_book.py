@@ -14,7 +14,7 @@ else:
     new_address = input("Введите новый адрес: ")
     # Обновление адреса в словаре
     address_book[name] = new_address
-    print("Адрес {name} обновлен на {new_address}")
+    print(f"Адрес {name} обновлен на {new_address}")
 
 
 # Ввод имени для удаления его адреса
@@ -22,7 +22,7 @@ name = input("Введите имя для удаления: ")
 #создадим условие, если введённое имя есть словаре
 if name in address_book:
     del address_book[name]
-    print( "{name} удален из адресной книги")
+    print(f"{name} удален из адресной книги")
     #создадим условие, если введённого имени нет в словаре
     
 else:
